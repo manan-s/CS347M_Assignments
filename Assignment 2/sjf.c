@@ -38,7 +38,7 @@ void sjf(struct processes *p, int np){
         p[i].burst_time = init_burst_time[i];
     }
 
-	  printf("\nProcessId, ArrivalTime, BurstTime, TurnaroundTime, WaitingTime \n");
+    printf("\nProcessId, ArrivalTime, BurstTime, TurnaroundTime, WaitingTime \n");
     for(int i = 0; i < np; i++){
     printf("%d        , %d          , %d        , %d            , %d\n",
         p[i].process_id,
@@ -60,4 +60,3 @@ void sjf(struct processes *p, int np){
   printf("Average turnaround time : %f \n",avg_turn);
   free(init_burst_time);
 }
-
