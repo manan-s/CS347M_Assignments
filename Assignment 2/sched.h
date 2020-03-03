@@ -15,8 +15,6 @@ struct processes
 	int ticket;
 };
 
-
-
 void sort(struct processes *p ,int np);
 void sort_rem(struct processes *p ,int np);
 int get_proc_id(struct processes *p ,int curr_time, int np);
