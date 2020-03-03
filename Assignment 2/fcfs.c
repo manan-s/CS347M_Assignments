@@ -31,8 +31,8 @@ void fcfs(struct processes *p, int np)
   for(int i=0; i<np;i++){
     t_time += p[i].waiting_time;
   }
-  float avg_wait = t_time /np;
-  float avg_turn = turn_time /np;
+  float avg_wait = t_time*1.0/np;
+  float avg_turn = turn_time*1.0/np;
   printf("Average waiting time : %f \n",avg_wait);
   printf("Average turnaround time : %f \n",avg_turn);
 }
