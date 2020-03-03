@@ -66,8 +66,6 @@ int main(int argc, char** argv){
               exit(0);
           }
       }
-  printf("Hey\n");
   free(p);
   exit(0);
-  
 }
