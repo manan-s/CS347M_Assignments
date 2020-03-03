@@ -17,7 +17,6 @@ void sort(struct processes *p ,int np)
   }
 }
 
-
 void sort_rem(struct processes *p ,int np){
   // Sorts processes by remaining time with highest remaining time first. 
   struct processes t;
@@ -67,7 +66,6 @@ int get_proc_id(struct processes *p ,int curr_time, int np){
 		return INT_MAX;
 
 	int random = rand()%sum;
-
 	int range = 0, j=0;
 
 	while(range<sum){
@@ -86,9 +84,8 @@ int get_proc_id(struct processes *p ,int curr_time, int np){
 }
 
 int get_proc_id_sjf(struct processes *p ,int curr_time, int np){
-
+	
 	int min_job = INT_MAX, min_id=INT_MAX;
-
 	int i = 0;
 
 	while (i<np && p[i].arrival_time<=curr_time){
@@ -104,7 +101,5 @@ int get_proc_id_sjf(struct processes *p ,int curr_time, int np){
 		}
 		i++;
 	}
-
 	return min_id;
 }
-
