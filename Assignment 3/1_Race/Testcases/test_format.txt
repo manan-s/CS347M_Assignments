@@ -1,0 +1,21 @@
+time between two successive prints
+tortoise speed per ms
+hare speed per ms
+hare sleep time in ms
+minimum distance between hare and turtle when turtle will sleep
+finish distance
+Number of time god intervene(N)
+N lines with "player time distance"
+winner
+
+1
+10
+200
+2
+1
+1000
+3
+T 2 100
+H 3 -10
+T 4 200
+H
