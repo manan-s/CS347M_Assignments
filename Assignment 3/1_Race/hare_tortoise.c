@@ -139,7 +139,6 @@ void* Hare(struct race *race)
 
 	while(race->is_finished!=1 && race->hare_position < race->finish_distance){
 		
-		
 		lock_acquire(&hare_lock);
 
 		while(race->whos_turn != 1){
@@ -153,18 +152,17 @@ void* Hare(struct race *race)
 		if(race->is_hare_sleeping != 1){
 			
 			if(race->is_finished!=1 && (race->hare_position - race->turtle_position) >= race->hare_turtle_distance_for_sleep){
-			race->is_hare_sleeping = 1;
-			race->remaining_sleep_time = race->hare_sleep_time;
-			if(race->turtle_finished == 1){
-				race->winner = 'T';
-				race->is_finished = 1;
-				race->bye_god = 1;
-				race->bye_reporter = 1;
-			}
+				race->is_hare_sleeping = 1;
+				race->remaining_sleep_time = race->hare_sleep_time;
+				if(race->turtle_finished == 1){
+					race->winner = 'T';
+					race->is_finished = 1;
+					race->bye_god = 1;
+					race->bye_reporter = 1;
+				}
 			}
 
 			else{
-				
 				race->hare_position += race->hare_speed;
 				race->hare_time ++;
 
@@ -293,4 +291,3 @@ void* Report(struct race *race)
 	}
 	return NULL;
 }
-
