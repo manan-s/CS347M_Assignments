@@ -6,8 +6,8 @@ Instructions for running:
 
 $ make
 
-For Problem 1
-$ ./hare_tortoise test-file=Testcases/test1.txt
+For Problem 1 /
+$ ./hare_tortoise test-file=Testcases/test1.txt /
 
-For Problem 2
+For Problem 2 /
 $ ./runner
