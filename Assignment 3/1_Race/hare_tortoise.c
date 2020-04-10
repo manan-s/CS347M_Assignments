@@ -4,9 +4,9 @@
 // A global clock is maintained
 // Before every tick:
 //
-//	 First turtle oves
+//	 First tortoise oves
 //	 Then the hare
-//	 Then god repositions, if so
+//	 Then god repositions, if he has to
 //	 The reporter reports data after the tick happens
 
 struct Repositioning {
