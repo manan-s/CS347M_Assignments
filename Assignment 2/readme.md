@@ -1,6 +1,6 @@
 # Assignment 2: Simulating various scheduling algorithms
 
-Instructions on running:
+Instructions for running:
 1) Ensure your system supports makefile
 2) Run the following two commands
 
