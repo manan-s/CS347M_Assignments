@@ -4,7 +4,7 @@
 // A global clock is maintained
 // Before every tick:
 //
-//	 First tortoise oves
+//	 First, tortoise moves
 //	 Then the hare
 //	 Then god repositions, if he has to
 //	 The reporter reports data after the tick happens
